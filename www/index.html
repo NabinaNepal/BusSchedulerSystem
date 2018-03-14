@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <link rel="stylesheet" type="text/css" href="lib/angular-toastr/dist/angular-toastr.css" />
+    <script type="text/javascript" src="lib/angular-toastr/dist/angular-toastr.tpls.js"></script>
+    <script src="lib/ngstorage/ngStorage.js"></script>
+    <script src="lib/ngCordova/dist/ng-cordova.js"></script>
+    <!-- <script src="lib/angular-ui-router/release/angular-ui-router.min.js"></script> -->
+
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+
+   <!-- <script src="//maps.googleapis.com/maps/api/js?sensor=false"></script> -->
+   <script src="https://maps-api-ssl.google.com/maps/api/js?libraries=places"></script>
+
+    <!-- <script src="templates/landlordPart/menu/menuController.js"></script> -->
+    <!-- templates controllers refrences     -->
+    <script src="templates/Common/landingViewController.js"></script>
+    <script src="templates/Common/landingMenuController.js"></script>
+    <script src="templates/Common/tenantSecondLandingViewController.js"></script>
+    <script src="templates/Common/buslistController.js"></script>
+
+    <!-- <script src="templates/tenantTestPart/tenantFullProfile/tenantFullProfileController.js"></script>
+
+    <script src="templates/tenantTestPart/tenantFile/tenantFileController.js"></script>
+    <script src="templates/tenantTestPart/tenantLogin/loginController.js"></script>
+    <script src="templates/tenantTestPart/tenantHome/homeController.js"></script>
+    <script src="templates/tenantTestPart/tenantSelfCheck/tenantSelfCheckController.js"></script>
+    <script src="templates/tenantTestPart/tenantSelfCheck/tenantSelfCheckProfileController.js"></script>
+    <script src="templates/tenantTestPart/tenantRegistration/tenantRegistrationController.js"></script>
+    <script src="templates/tenantTestPart/tenantRegistration/tenantAddPhotoController.js"></script>
+    <script src="templates/tenantTestPart/tenantRegistration/tenantFileDetailController.js"></script>
+    <script src="templates/tenantTestPart/tenantFileDetailInfo/personalInformationController.js"></script>
+    <script src="templates/tenantTestPart/tenantFileDetailInfo/employmentInformationController.js"></script>
+    <script src="templates/tenantTestPart/tenantFileDetailInfo/previousLandlordController.js"></script>
+
+    <script src="templates/tenantTestPart/tenantViewAndEdit/viewInfoController.js"></script>
+    <script src="templates/tenantTestPart/tenantViewAndEdit/editInfoController.js"></script> -->
+    <!-- landlord part -->
+   <!--  <script src="templates/landlordPart/menu/menuController.js"></script>
+    <script src="templates/landlordPart/menu/viewLandlordProfileController.js"></script>
+    <script src="templates/landlordPart/menu/editLandlordProfileController.js"></script>
+     <script src="templates/landlordPart/menu/menuAddBuildingController.js"></script>
+    <script src="templates/landlordPart/landlordLandingPageController.js"></script>
+    <script src="templates/landlordPart/landlordLogin/landlordLoginController.js"></script>
+    <script src="templates/landlordPart/Home/landlordHomeController.js"></script>
+    <script src="templates/landlordPart/Home/addBuildingAddRemoveTenantController.js"></script>
+
+    <script src="templates/landlordPart/landLordVerification/codeVerifiedController.js"></script>
+    <script src="templates/landlordPart/landLordVerification/codeNotVerified.js"></script>
+    <script src="templates/landlordPart/landLordVerification/signUpVerificationController.js"></script>
+    <script src="templates/landlordPart/landLordVerification/landlordVerificationController.js"></script>
+    <script src="templates/landlordPart/TenantList/tenantUnderBuildingController.js"></script>
+
+    <script src="templates/landlordPart/landlordSignup/signupController.js"></script>
+    <script src="templates/landlordPart/landlordSignup/addSignUpPhotoController.js"></script>
+    <script src="templates/landlordPart/tenantRate/leaveNoteController.js"></script>
+    <script src="templates/landlordPart/tenantRate/reviewTenantController.js"></script>
+    <script src="templates/landlordPart/tenantRate/rentInfoController.js"></script>
+    <script src="templates/landlordPart/tenantRate/reviewNoteController.js"></script>
+    <script src="templates/landlordPart/tenantRate/rateTenantController.js"></script>
+
+    <script src="templates/landlordPart/inputProperty/inputPropertyController.js"></script>
+    <script src="templates/landlordPart/inputProperty/continueinputpropertyController.js"></script>
+
+    <script src="templates/landlordPart/TenantList/viewTenantcontroller.js"></script>
+    <script src="templates/landlordPart/TenantCheck/checkTenantController.js"></script>
+    <script src="templates/landlordPart/TenantCheck/tenantFullProfileController.js"></script>
+    <script src="templates/landlordPart/TenantCheck/tenantCompleteProfileController.js"></script>
+    <script src="templates/landlordPart/TenantCheck/confirmTenantDetailController.js"></script>
+    <script src="templates/landlordPart/TenantCheck/tenantNotFoundController.js"></script>
+    <script src="templates/landlordPart/criminalReportandRecord/creditReportController.js"></script>
+    <script src="templates/landlordPart/criminalReportandRecord/criminalRecordController.js"></script> -->
+    <!--  <script src="templates/landlordPart/criminalReportandRecord/creditReportController.js"></script>
+         <script src="templates/landlordPart/criminalReportandRecord/criminalRecordController.js"></script> -->
+   <!--  <script src="templates/landlordPart/TenantAdd/addTenantController.js"></script>
+    <script src="templates/landlordPart/TenantAdd/reviewNewTenantController.js"></script>
+    <script src="templates/landlordPart/TenantAdd/reviewNewTenantContinueController.js"></script>
+    <script src="templates/landlordPart/TenantAdd/addTenantAndRemoveExistTenantController.js"></script>
+
+    <script src="templates/landlordPart/changePassword/changePaswordController.js"></script>
+    <script src="templates/landlordPart/LandLordHome/landLordHomeLandingController.js"></script>
+    <script src="templates/landlordPart/LandLordHome/manageExistingTenantController.js"></script>
+    <script src="templates/landlordPart/LandLordHome/crazyTenantStoriesController.js"></script>
+    <script src="templates/landlordPart/LandLordHome/winACruiseController.js"></script>
+
+    <script src="templates/landlordPart/tenantRate/rateTenantLandingController.js"></script>
+    <script src="templates/landlordPart/tenantRate/rateNewTenantController.js"></script>
+    <script src="templates/landlordPart/tenantRate/reEnterTenantController.js"></script>
+    <script src="templates/landlordPart/tenantRate/rateTenantCheckController.js"></script>
+
+    <script src="templates/landlordPart/manageExistingTenant/editAddRemoveTenantController.js"></script>
+    <script src="templates/landlordPart/manageExistingTenant/lookUpaTenantController.js"></script>
+    <script src="templates/landlordPart/tenantRate/rateTenantGiveThumbsUpDownController.js"></script>
+
+    <script src="templates/landlordPart/tenantRate/rateTenantReviewscontroller.js"></script>
+    <script src="templates/landlordPart/tenantRate/suggestCategoryController.js"></script>
+    <script src="templates/landlordPart/tenantRate/rateTenantThankyouController.js"></script>
+
+    <script src="templates/landlordPart/inviteTenant/inviteNewTenantController.js"></script>
+    <script src="templates/landlordPart/inviteTenant/invitePotentialTenantController.js"></script>
+
+    <script src="templates/landlordPart/notatePayment/notatePaymentOrManageTenantController.js"></script>
+    <script src="templates/landlordPart/notatePayment/buildingListNotatePaymentController.js"></script>
+    <script src="templates/landlordPart/notatePayment/listOfTenantInBuildingController.js"></script>
+    <script src="templates/landlordPart/notatePayment/addBuildingController.js"></script>
+    <script src="templates/landlordPart/removeTenantFlow/listofTenantUnitForRemoveController.js"></script>
+    <script src="templates/landlordPart/removeTenantFlow/enterRemovedDateController.js"></script>
+    <script src="templates/landlordPart/removeTenantFlow/saveAndDisplayController.js"></script>
+    <script src="templates/landlordPart/notatePaymentDateAndNotes/rentPaymentDateLandingViewController.js"></script>
+    <script src="templates/landlordPart/notatePaymentDateAndNotes/addRentPaymentDateAndNoteController.js"></script>
+    <script src="templates/landlordPart/notatePaymentDateAndNotes/editRentPaymentDateAndNoteController.js"></script>
+    <script src="templates/landlordPart/notatePaymentDateAndNotes/listOfPaymentDateAndNotesController.js"></script> -->
+
+    <!--  -->
+
+    <!-- <script src="templates/Common/landingMenuController.js"></script> -->
+    <!--Services references -->
+    <script src="js/Services/tenantEditProfileService.js"></script>
+    <script src="js/Services/baseUrl.js"></script>
+    <script src="js/Services/addBuildingService.js"></script>
+    <script src="js/Services/selfCheckService.js"></script>
+    <script src="js/Services/allTenantPartService.js"></script>
+    <script src="js/Services/LoginService.js"></script>
+    <script src="js/Services/commonService.js"></script>
+    <script src="js/Services/userProfileService.js"></script>
+
+    <!--Directive Reference -->
+    <script src="directive/limitTo.js"></script>
+    <script src="directive/validateNumber.js"></script>
+
+</head>
+
+<body ng-app="starter">
+
+    <ion-nav-view></ion-nav-view>
+</body>
+
+</html>

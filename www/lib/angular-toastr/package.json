@@ -1,0 +1,103 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "angular-toastr",
+        "scope": null,
+        "escapedName": "angular-toastr",
+        "name": "angular-toastr",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "C:\\Users\\Ionic"
+    ]
+  ],
+  "_from": "angular-toastr@latest",
+  "_id": "angular-toastr@2.0.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/angular-toastr",
+  "_nodeVersion": "5.11.1",
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/angular-toastr-2.0.0.tgz_1469368271030_0.5220392846968025"
+  },
+  "_npmUser": {
+    "name": "foxandxss",
+    "email": "Foxandxss@gmail.com"
+  },
+  "_npmVersion": "3.10.2",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "angular-toastr",
+    "scope": null,
+    "escapedName": "angular-toastr",
+    "name": "angular-toastr",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/angular-toastr/-/angular-toastr-2.0.0.tgz",
+  "_shasum": "77e23fd19d1deb3b5158c55d4dc20cc3d411c3de",
+  "_shrinkwrap": null,
+  "_spec": "angular-toastr",
+  "_where": "C:\\Users\\Ionic",
+  "author": {
+    "name": "Jesus Rodriguez",
+    "email": "Foxandxss@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/Foxandxss/angular-toastr/issues"
+  },
+  "dependencies": {},
+  "description": "[![Code Climate](https://codeclimate.com/github/Foxandxss/angular-toastr.png)](https://codeclimate.com/github/Foxandxss/angular-toastr) [![Build Status](https://travis-ci.org/Foxandxss/angular-toastr.svg?branch=master)](https://travis-ci.org/Foxandxss/ang",
+  "devDependencies": {
+    "angular": "^1.5.0",
+    "angular-mocks": "^1.5.0",
+    "del": "^2.0.2",
+    "gulp": "^3.8.10",
+    "gulp-angular-templatecache": "^1.5.0",
+    "gulp-concat": "^2.4.3",
+    "gulp-cssnano": "^2.1.1",
+    "gulp-jshint": "^2.0.0",
+    "gulp-less": "^3.0.2",
+    "gulp-rename": "^1.2.0",
+    "gulp-uglify": "^1.0.2",
+    "jquery": "^2.1.4",
+    "jshint": "^2.9.1",
+    "jshint-stylish": "^2.0.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "77e23fd19d1deb3b5158c55d4dc20cc3d411c3de",
+    "tarball": "https://registry.npmjs.org/angular-toastr/-/angular-toastr-2.0.0.tgz"
+  },
+  "gitHead": "cb508fe6801d6b288d3afc525bb40fee1b101650",
+  "homepage": "https://github.com/Foxandxss/angular-toastr#readme",
+  "keywords": [
+    "angularjs",
+    "toastr",
+    "popup"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "foxandxss",
+      "email": "Foxandxss@gmail.com"
+    }
+  ],
+  "name": "angular-toastr",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Foxandxss/angular-toastr.git"
+  },
+  "scripts": {},
+  "version": "2.0.0"
+}
